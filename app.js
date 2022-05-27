@@ -4,6 +4,9 @@ const express = require('express');
 // App Setup
 const app = express();
 
+// public
+app.use(express.static('public'));
+
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
     // Replace with your own key
